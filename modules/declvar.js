@@ -1,5 +1,4 @@
-//exports.acao = () =>
- function acao()
+ function modulo()
  {
     
     var x = 6;
@@ -19,4 +18,4 @@
 //console.log(z);
 
 }
- module.exports = {acao}
+module.exports = {modulo}
