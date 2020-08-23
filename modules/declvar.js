@@ -1,3 +1,8 @@
+/* código para utilizar o módulo, index.js
+var modulo = require('./modules/modulos.js');
+
+modulo.modulo();
+*/
  function modulo()
  {
     
