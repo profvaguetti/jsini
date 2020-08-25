@@ -1,11 +1,16 @@
+const OperArit = require('./modules/objetos/OperArit.js');
 
-const Pessoa = require('./modules/objetos/Pessoa.js');
+var calculadora = new OperArit(10,5); // esquerda e direita do operador
 
-const joao = new Pessoa(80,1.75); // instanciando um objeto
-console.log( joao.imc() );
+console.log(calculadora.soma());
+console.log(calculadora.subtracao());
+console.log(calculadora.multiplicacao());
+console.log(calculadora.divisao());
+console.log(calculadora.mod());
+console.log(calculadora.potencia());
 
-const pedro = new Pessoa();
-pedro.peso = 100;
-pedro.altura = 1.6;
-console.log( pedro.imc() );
+
+
+
+
 
