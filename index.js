@@ -1,19 +1,12 @@
-const OperArit = require('./modules/objetos/OperArit.js');
+const opi = require('./modules/objetos/OperIgualdade.js');
+const opr = require('./modules/objetos/OperRelacional.js');
 
-var calculadora = new OperArit(10,5); // esquerda e direita do operador
-// if (<condicao) { ... }
-var x,y; x = true; y = false;
-if(x){
-console.log(calculadora.soma());
-console.log(calculadora.subtracao());
-}
-if(y){
-console.log(calculadora.multiplicacao());
-console.log(calculadora.divisao());
-console.log(calculadora.mod());
-console.log(calculadora.potencia());
-}
+var obj = new opi.OperIgualdade(10,9);
 
+console.log(obj.igualdade());
+console.log(obj.diferenca());
 
+var objr = new opr.OperRelacional(10,10);
 
-
+console.log(objr.maiorq());
+console.log(objr.menorq());
